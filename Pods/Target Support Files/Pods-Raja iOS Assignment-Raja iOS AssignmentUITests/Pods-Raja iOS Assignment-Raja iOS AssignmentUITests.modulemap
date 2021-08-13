@@ -1,0 +1,6 @@
+framework module Pods_Raja_iOS_Assignment_Raja_iOS_AssignmentUITests {
+  umbrella header "Pods-Raja iOS Assignment-Raja iOS AssignmentUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

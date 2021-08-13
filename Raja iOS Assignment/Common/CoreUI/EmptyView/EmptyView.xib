@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Nunito-Bold.ttf">
+            <string>Nunito-Bold</string>
+        </array>
+        <array key="Nunito-Regular.ttf">
+            <string>Nunito-Regular</string>
+        </array>
+        <array key="Nunito-SemiBold.ttf">
+            <string>Nunito-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EmptyView" customModule="Raja_iOS_Assignment" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="i5M-Pr-FkT" id="6g9-hp-seI"/>
+                <outlet property="msgIcon" destination="fdH-nJ-PNh" id="3nX-4S-7sp"/>
+                <outlet property="msgLabel" destination="7Ua-ON-uwO" id="enN-dt-gcA"/>
+                <outlet property="paddingTop" destination="3OO-hV-YfJ" id="cBB-C5-cNc"/>
+                <outlet property="reloadButton" destination="r1D-EL-Gaf" id="tvm-Qu-Uaz"/>
+                <outlet property="titleLabel" destination="Yyf-1I-yVi" id="Hve-4w-C42"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="417"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TCF-0G-3U6" userLabel="vwEmpty">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="417"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="folder.fill.badge.questionmark" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="fdH-nJ-PNh">
+                            <rect key="frame" x="176" y="124" width="24.5" height="17.5"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ring! Ring! Where are you?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yyf-1I-yVi" userLabel="lblTitle">
+                            <rect key="frame" x="16" y="159" width="343" height="19"/>
+                            <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="16"/>
+                            <color key="textColor" name="greyishBrown"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="obE-gI-3o1">
+                            <rect key="frame" x="16" y="188" width="343" height="16.5"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You don’t have any activities going on." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ua-ON-uwO" userLabel="msgLabel">
+                                    <rect key="frame" x="51.5" y="0.0" width="240.5" height="16.5"/>
+                                    <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="14"/>
+                                    <color key="textColor" name="greyishBrown"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="5"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r1D-EL-Gaf">
+                                    <rect key="frame" x="91.5" y="0.0" width="160" height="38"/>
+                                    <color key="backgroundColor" name="primary"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="160" id="arw-nl-6Fc"/>
+                                        <constraint firstAttribute="height" constant="38" id="q9h-o9-SXj"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Nunito-SemiBold" family="Nunito" pointSize="16"/>
+                                    <state key="normal" title="Reload">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="8"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="didTapButton:" destination="-1" eventType="touchUpInside" id="cOU-C2-4Ts"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="obE-gI-3o1" firstAttribute="top" secondItem="Yyf-1I-yVi" secondAttribute="bottom" constant="10" id="1Zl-KI-9SS"/>
+                        <constraint firstItem="Yyf-1I-yVi" firstAttribute="centerY" secondItem="TCF-0G-3U6" secondAttribute="centerY" constant="-40" id="3OO-hV-YfJ"/>
+                        <constraint firstItem="Yyf-1I-yVi" firstAttribute="leading" secondItem="TCF-0G-3U6" secondAttribute="leading" constant="16" id="4Oi-Tq-CPo"/>
+                        <constraint firstAttribute="trailing" secondItem="Yyf-1I-yVi" secondAttribute="trailing" constant="16" id="5vA-3j-rDM"/>
+                        <constraint firstItem="fdH-nJ-PNh" firstAttribute="centerX" secondItem="TCF-0G-3U6" secondAttribute="centerX" id="b8a-5J-bkO"/>
+                        <constraint firstItem="Yyf-1I-yVi" firstAttribute="top" secondItem="fdH-nJ-PNh" secondAttribute="bottom" constant="16" id="h8b-cA-nFb"/>
+                        <constraint firstAttribute="trailing" secondItem="obE-gI-3o1" secondAttribute="trailing" constant="16" id="vHU-1O-eEJ"/>
+                        <constraint firstItem="obE-gI-3o1" firstAttribute="leading" secondItem="TCF-0G-3U6" secondAttribute="leading" constant="16" id="wQB-VY-R0x"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="NO"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="TCF-0G-3U6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="IVG-uH-7XL"/>
+                <constraint firstItem="TCF-0G-3U6" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Rdc-OM-Twt"/>
+                <constraint firstAttribute="trailing" secondItem="TCF-0G-3U6" secondAttribute="trailing" id="c8Q-t2-9VC"/>
+                <constraint firstAttribute="bottom" secondItem="TCF-0G-3U6" secondAttribute="bottom" id="qGr-E6-1lJ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-186.40000000000001" y="4.9475262368815596"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="folder.fill.badge.questionmark" catalog="system" width="128" height="91"/>
+        <namedColor name="greyishBrown">
+            <color red="0.27099999785423279" green="0.27099999785423279" blue="0.27099999785423279" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="primary">
+            <color red="0.21600000560283661" green="0.25900000333786011" blue="0.32199999690055847" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

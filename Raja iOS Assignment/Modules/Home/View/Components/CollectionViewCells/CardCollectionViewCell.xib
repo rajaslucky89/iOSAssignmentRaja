@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CardCollectionViewCell" customModule="Raja_iOS_Assignment" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="134" height="260"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="134" height="260"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RSX-Xm-wmw">
+                        <rect key="frame" x="0.0" y="0.0" width="129" height="260"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Wnm-dH-mJT">
+                                <rect key="frame" x="0.0" y="0.0" width="129" height="193.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Wnm-dH-mJT" secondAttribute="height" multiplier="2:3" id="9Hh-pa-lOl"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ykD-dc-cvE">
+                                <rect key="frame" x="8" y="201.5" width="34.5" height="16.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kTE-46-LvB">
+                                <rect key="frame" x="8" y="226" width="29.5" height="14"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ykD-dc-cvE" firstAttribute="top" secondItem="Wnm-dH-mJT" secondAttribute="bottom" constant="8" id="1ae-KW-9hL"/>
+                            <constraint firstItem="kTE-46-LvB" firstAttribute="leading" secondItem="RSX-Xm-wmw" secondAttribute="leading" constant="8" id="AXa-K5-eR5"/>
+                            <constraint firstAttribute="trailing" secondItem="Wnm-dH-mJT" secondAttribute="trailing" id="CZn-zt-lUb"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="kTE-46-LvB" secondAttribute="trailing" constant="8" id="QPe-br-9hI"/>
+                            <constraint firstItem="kTE-46-LvB" firstAttribute="top" secondItem="ykD-dc-cvE" secondAttribute="bottom" constant="8" id="WqA-qn-LAW"/>
+                            <constraint firstItem="Wnm-dH-mJT" firstAttribute="top" secondItem="RSX-Xm-wmw" secondAttribute="top" id="XOB-ga-vcZ"/>
+                            <constraint firstItem="ykD-dc-cvE" firstAttribute="leading" secondItem="RSX-Xm-wmw" secondAttribute="leading" constant="8" id="dH2-uv-gc0"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="kTE-46-LvB" secondAttribute="bottom" constant="12" id="ddn-Zv-0P7"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ykD-dc-cvE" secondAttribute="trailing" constant="8" id="ebO-ym-f8W"/>
+                            <constraint firstItem="Wnm-dH-mJT" firstAttribute="leading" secondItem="RSX-Xm-wmw" secondAttribute="leading" id="hzq-th-BO3"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="RSX-Xm-wmw" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="2Qc-Xo-4mE"/>
+                <constraint firstAttribute="trailing" secondItem="RSX-Xm-wmw" secondAttribute="trailing" constant="5" id="FWd-tD-ET9"/>
+                <constraint firstItem="RSX-Xm-wmw" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="THZ-Iz-5G0"/>
+                <constraint firstAttribute="bottom" secondItem="RSX-Xm-wmw" secondAttribute="bottom" id="cVO-QP-UHx"/>
+            </constraints>
+            <size key="customSize" width="110.5" height="225"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="descriptionLabel" destination="kTE-46-LvB" id="Kgn-6k-bcB"/>
+                <outlet property="imageView" destination="Wnm-dH-mJT" id="Chv-gA-aK3"/>
+                <outlet property="nameLabel" destination="ykD-dc-cvE" id="dMl-iB-bvB"/>
+            </connections>
+            <point key="canvasLocation" x="28.985507246376812" y="83.035714285714278"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

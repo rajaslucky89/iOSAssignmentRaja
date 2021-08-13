@@ -1,0 +1,15 @@
+//
+//  Sanity.xcconfig
+//  Raja iOS Assignment
+//
+//  Created by Raja Syahmudin on 14/08/21.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+APP_NAME = Photo Gallery (SANITY)
+APP_BUNDLE_ID = com.rajasyahmudin.Raja-iOS-Assignment.sanity
+APP_VERSION = 1.0.0
+
+BASE_API_URL = https:/$()/api.unsplash.com/
